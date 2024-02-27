@@ -1,0 +1,32 @@
+(venv) [miles@arch app]$ west build -d build/left-corne -b nice_nano_v2 -- -DSHIELD=corne_left -DZMK_CONFIG="/home/miles/Documents/zmk-build-env/miryoku-zmk/config"
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base (cached)).
+-- Application: /home/miles/Documents/zmk-build-env/zmk/app
+-- CMake version: 3.28.3
+-- Cache files will be written to: /home/miles/.cache/zephyr
+-- Zephyr version: 3.5.0 (/home/miles/Documents/zmk-build-env/zmk/zephyr)
+-- Found west (found suitable version "1.2.0", minimum required is "0.14.0")
+-- Adding /home/miles/Documents/zmk-build-env/zmk/app/boards/shields/corne
+-- ZMK Config directory: /home/miles/Documents/zmk-build-env/miryoku-zmk/config
+-- Using keymap file: /home/miles/Documents/zmk-build-env/miryoku-zmk/config/corne.keymap
+-- Board: nice_nano_v2
+-- Shield(s): corne_left
+-- Found host-tools: zephyr 0.16.3 (/home/miles/.local/zephyr-sdk-0.16.3)
+-- Found toolchain: zephyr 0.16.3 (/home/miles/.local/zephyr-sdk-0.16.3)
+-- Found BOARD.dts: /home/miles/Documents/zmk-build-env/zmk/app/boards/arm/nice_nano/nice_nano_v2.dts
+-- Found devicetree overlay: /home/miles/Documents/zmk-build-env/zmk/app/boards/shields/corne/corne_left.overlay
+-- Found devicetree overlay: /home/miles/Documents/zmk-build-env/zmk/app/boards/shields/corne/boards/nice_nano_v2.overlay
+-- Found devicetree overlay: /home/miles/Documents/zmk-build-env/miryoku-zmk/config/corne.keymap
+devicetree error: /home/miles/Documents/zmk-build-env/miryoku-zmk/config/../miryoku/miryoku.dtsi:23 (column 1499): parse error: expected number or parenthesized expression
+-- In: /home/miles/Documents/zmk-build-env/zmk/app/build/left-corne/zephyr, command: /home/miles/Documents/zmk-build-env/venv/bin/python;/home/miles/Documents/zmk-build-env/zmk/zephyr/scripts/dts/gen_defines.py;--dts;/home/miles/Documents/zmk-build-env/zmk/app/build/left-corne/zephyr/zephyr.dts.pre;--dtc-flags;'';--bindings-dirs;/home/miles/Documents/zmk-build-env/zmk/app/module/dts/bindings;/home/miles/Documents/zmk-build-env/zmk/app/dts/bindings;/home/miles/Documents/zmk-build-env/zmk/zephyr/dts/bindings;--header-out;/home/miles/Documents/zmk-build-env/zmk/app/build/left-corne/zephyr/include/generated/devicetree_generated.h.new;--dts-out;/home/miles/Documents/zmk-build-env/zmk/app/build/left-corne/zephyr/zephyr.dts.new;--edt-pickle-out;/home/miles/Documents/zmk-build-env/zmk/app/build/left-corne/zephyr/edt.pickle;--vendor-prefixes;/home/miles/Documents/zmk-build-env/zmk/app/dts/bindings/vendor-prefixes.txt;--vendor-prefixes;/home/miles/Documents/zmk-build-env/zmk/zephyr/dts/bindings/vendor-prefixes.txt
+CMake Error at /home/miles/Documents/zmk-build-env/zmk/zephyr/cmake/modules/dts.cmake:279 (message):
+  gen_defines.py failed with return code: 1
+Call Stack (most recent call first):
+  /home/miles/Documents/zmk-build-env/zmk/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+  /home/miles/Documents/zmk-build-env/zmk/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+  /home/miles/Documents/zmk-build-env/zmk/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+FATAL ERROR: command exited with status 1: /usr/bin/cmake -DWEST_PYTHON=/home/miles/Documents/zmk-build-env/venv/bin/python -B/home/miles/Documents/zmk-build-env/zmk/app/build/left-corne -GNinja -DSHIELD=corne_left -DZMK_CONFIG=/home/miles/Documents/zmk-build-env/miryoku-zmk/config -S/home/miles/Documents/zmk-build-env/zmk/app

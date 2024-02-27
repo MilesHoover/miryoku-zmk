@@ -1,6 +1,8 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+#MIRYOKU_ALPHAS=COLEMAKDHK
+
 #if !defined (MIRYOKU_LAYOUTMAPPING_CORNE)
 
 #define XXX &none
